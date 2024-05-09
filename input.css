@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Literata:opsz@7..72&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@font-face {
+  font-family: blanka;
+  src: url(/fonts/Blanka-Regular.otf);
+}
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +18,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
+  background: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -25,11 +31,11 @@
 }
 
 ::selection {
-  background: #fbf2c0;
+  background: #fbf2c07c;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #fbf2c0;
+  background: #fbf2c07c;
 }

@@ -10,6 +10,8 @@ module.exports = {
       fontFamily: {
         Literata: ["Literata", "serif"],
         OpenSans: ["Open Sans", "sans-serif"],
+        BebasNeue: ["Bebas Neue", "cursive"],
+        Blanka: ["blanka"],
       },
     },
   },
