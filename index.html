@@ -1,1 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>La Vida Futura</title>
+    <link rel="icon" href="/img/logo.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="font-mono">
+      <header>
+        <nav
+          class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+        >
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+          >
+            <a href="https://flowbite.com" class="flex items-center">
+              <img
+                src="/img/logo.jpeg"
+                class="mr-3 h-6 sm:h-9 rounded-3xl"
+                alt="Flowbite Logo"
+              />
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                >La Vida Futura</span
+              >
+            </a>
+            <div class="flex items-center lg:order-2">
+              <a
+                href="#"
+                class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                >Log in</a
+              >
+              <a
+                href="#"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >Get started</a
+              >
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Company</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Marketplace</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- hero -->
 
+      <div class="md:flex justify-between p-10 bg-[#1B1B1B] text-white">
+        <!--   right -->
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h2 class="text-5xl font-bold mb-8 font-Literata">Synopsis</h2>
+          <h3 class="text-2xl mb-2 font-OpenSans text-justify mr-7">
+            Sa nakaraang naranasan ang tunay na pag-ibig makaaalpas pa kaya ang
+            pusong sawi sa pagkawalay nito sa minamahal o pipilitin muling
+            makapasok sa pinto patungo sa nakaraan upang ito'y balikan?
+            Malilimutan ba ng puso ni Hugo ang dalagang si Esperanza matapos ang
+            tatlong taong makalipas noong makapasok siya sa loob ng pintong puno
+            ng hiwaga o nagbabakasakali na lamang ang binata na mangyari ito sa
+            kaniya sa kasalukuyan na matagpuan ang babaeng tulad ni Esperanza?
+          </h3>
+          <br />
+          <h3 class="text-2xl mb-2 font-OpenSans text-justify mr-6">
+            Ang bawat pahina ay magdadala sa bawat indibidwal sa mundong puno ng
+            hiwaga at mga aral. Makikilala natin ang mga karakter na kapupulutan
+            ng aral mula sa kahalagahan ng pamilya, pag-ibig, at paghubog sa
+            sariling pagkatao. Isang kwento na magbibigay inspirasyon sa mga
+            taong nagmamahal at patuloy na umaasang makamtan at malasap ang
+            tunay na pag-ibig at kaligayahan. Datapuwat, hindi lamang ito isang
+            kwento na puno saya at magagandang pangyayari lamang ang makakamtan
+            ngunit ito ay isang paglalakbay ng pagtuklas upang makilala ang
+            sarili at ang bansang kinagisnan.
+          </h3>
+          <br />
+          <a
+            href="#"
+            class="inline-block py-3 px-6 md:text-lg bg-pink-200 hover:text-red-100 hover:bg-pink-800 rounded mr-2"
+            >Read more</a
+          ><a
+            href="#"
+            class="inline-block py-3 px-6 md:text-lg bg-pink-200 hover:text-red-100 hover:bg-pink-800 rounded mr-2"
+            >Subsribe</a
+          >
+        </div>
+
+        <!--   left -->
+        <div class="md:w-1/2">
+          <img
+            src="/img/book.jpg"
+            alt="Travel"
+            class="w-full rounded shadow-2xl h-auto max-h-full sm:max-h-screen md:max-h-full lg:max-h-screen xl:max-h-full"
+          />
+        </div>
+      </div>
+      <!-- features -->
+    </div>
+
+    <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-->
+    <div class="container mx-auto py-8 bg-[#2B2B2B]">
+      <div class="flex flex-col text-center gap-4 mb-8 p-4">
+        <div class="text-purple-600 text-sm font-bold">Our team</div>
+
+        <div class="text-gray-900 text-3xl md:text-4xl font-bold">
+          Some of the people you'll be working with
+        </div>
+
+        <div class="text-gray-600 md:text-lg">
+          We're a 100% remote team spread all across the world. Join us!
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center flex-wrap gap-4 p-4">
+        <div class="card">
+          <img
+            src="/img/QUIMPO, Avlyn Juliet C..jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Quimpo, Avlyn Juliet C.
+          </div>
+
+          <div class="text-purple-600">Leader & Layout Artist</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/SAMANIEGO.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Samaniego, Karl Edrei M.
+          </div>
+
+          <div class="text-purple-600">Layout Artist</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Guevarra 2x2.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Guevarra, Aellon Jhon D.
+          </div>
+
+          <div class="text-purple-600">Field</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/PINOLA.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Pinola, Michaella Ashley C.
+          </div>
+
+          <div class="text-purple-600">Field</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Carlos24-02-16 165746.png"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Ruflo, Carlos Miguel F.
+          </div>
+
+          <div class="text-purple-600">Writer (Kabanata 1)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Prince Guerrero Santos.png"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">Santos, Prince G.</div>
+
+          <div class="text-purple-600">Writer (Kabanata 2)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Carlom, Benz.png"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">Carlom, Benz M.</div>
+
+          <div class="text-purple-600">Writer (Kabanata 3)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Bulan, Isabela Claire.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Bulan, Isabela Claire L.
+          </div>
+
+          <div class="text-purple-600">Writer (Kabanata 4)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Chua.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Chua, Jazmeen Jade F.
+          </div>
+
+          <div class="text-purple-600">Writer (Kabanata 5 & 8)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/Carreon.png"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Carreon, Riale Jasmine L.
+          </div>
+
+          <div class="text-purple-600">Writer (Kabanata 6 & 10)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="/img/diaz.png"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">Diaz, Reyman M.</div>
+
+          <div class="text-purple-600">Writer (Kabanata 7)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="/img/Ayala, Diana Rose.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Ayala, Diana Rose M.
+          </div>
+
+          <div class="text-purple-600">Writer (Kabanata 9)</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/RODRIGO.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Rodrigo, Jillian Joy T.
+          </div>
+
+          <div class="text-purple-600">Proofreader</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="/img/BULAWAN.jpg"
+            class="w-24 h-24 rounded-full object-cover transition duration-200 hover:scale-110"
+          />
+
+          <div class="text-gray-900 text-lg font-bold">
+            Bulawan, Leonard Joshua N.
+          </div>
+
+          <div class="text-purple-600">Website Designer</div>
+
+          <div
+            class="flex items-center justify-center gap-3 mt-2 w-auto h-5 text-gray-600"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-dribbble fa-lg cursor-pointer transition duration-200 hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[rgba(127,81,83,1)]">
+      <div
+        class="container m-auto space-y-8 px-6 py-16 text-gray-600 dark:text-gray-400 md:px-12 lg:px-20"
+      >
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 border-b border-[rgba(194,166,174,0.6)] pb-8"
+        >
+          <img
+            width="100"
+            height="42"
+            src="./img/logo.jpeg"
+            alt="La Vida Futura"
+            class="w-24 rounded-3xl"
+          />
+        </div>
+        <div class="w-full -mx-6">
+          <div class="px-6">
+            <div>
+              <p class="text-lg font-medium text-gray-100"></p>
+            </div>
+
+            <p class="font-OpenSans text-white">
+              Ipinaabot namin ang taos-pusong pagpapahalaga sa lahat ng naging
+              instrumento sa likha ng aklat na ito, "Ang Pintong Mag-uukit ng
+              Pagmamahalan". Ang suporta at tulong ay napakahalaga sa
+              pagsasakatuparan ng proyektong ito. Nais iparating ang pasasalamat
+              kay Ginoong Antonio A. Espino Jr., sa kaniyang paggabay at
+              patnubay sa buong proseso ng pagsulat. Ang kaniyang pagtuturo at
+              paghihikayat ay nagbigay inspirasyon. Nagpapasalamat din sa mga
+              taong nagbigay kontribusyon sa iba't ibang aspeto ng aklat na ito.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-between rounded-3xl bg-[rgba(32,25,26,0.5)] px-4 py-3 text-gray-400"
+        >
+          <span class="font-PolySansN"
+            >© La Vida Futura <span id="year">2024</span></span
+          >
+          <a
+            href="https://www.apache.org/licenses/LICENSE-2.0"
+            class="font-medium transition hover:text-primary font-OpenSans"
+            >Apache 2.0</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
